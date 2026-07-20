@@ -140,3 +140,18 @@ git commit -m "Remove ai_resource"
 git push origin master
 
 
+## ffmpeg
+ffmpeg -i EDC_AI_0001.mp4 -vcodec libx264 -crf 28 EDC_AI_0001_zip.mp4
+ffmpeg -i EDC_AI_0002.mp4 -vcodec libx264 -crf 28 EDC_AI_0002_zip.mp4
+ffmpeg -i EDC_AI_0003.mp4 -vcodec libx264 -crf 28 EDC_AI_0003_zip.mp4
+
+## revert
+git revert HEAD
+git revert HEAD^
+git revert 81ee859138d64a0879928cf022c2c877f9407c2f
+git revert bdea005a458c77446c3a7eb5fbeac840e351c566
+
+## vi
+vi (Esc)
+:q!
+:wq
